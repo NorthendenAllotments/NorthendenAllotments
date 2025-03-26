@@ -13,7 +13,7 @@ function checkAnswers(){
     let answer1 = quiz.colour.value;
 
     //assign the score value
-    if(answer1 === "pink"){
+    if(answer1 === "orange"){
         score = score + 1;
     }
     else if (answer1 === "yellow") {
@@ -30,13 +30,13 @@ function checkAnswers(){
     let answer2 = quiz.animal.value;
 
     //assign the score value
-    if(answer2 === "red-panda"){
+    if(answer2 === "snail"){
         score = score + 1;
     }
-    else if (answer2 === "giraffe") {
+    else if (answer2 === "ant") {
         score = score + 2;
     }
-    else if (answer2 === "jaguar") {
+    else if (answer2 === "beetle") {
         score = score + 3;
     }
     else {
@@ -50,10 +50,10 @@ function checkAnswers(){
     if(answer3 === "pop"){
         score = score + 1;
     }
-    else if (answer3 === "hip-hop") {
+    else if (answer3 === "rock") {
         score = score + 2;
     }
-    else if (answer3 === "rock") {
+    else if (answer3 === "hip-hop") {
         score = score + 3;
     }
     else {
@@ -64,13 +64,13 @@ function checkAnswers(){
     let answer4 = quiz.hobby.value;
 
     //assign the score value
-    if(answer4 === "read"){
+    if(answer4 === "spring"){
         score = score + 1;
     }
-    else if (answer4 === "music") {
+    else if (answer4 === "summer") {
         score = score + 2;
     }
-    else if (answer4 === "walk") {
+    else if (answer4 === "autumn") {
         score = score + 3;
     }
     else {
@@ -79,21 +79,21 @@ function checkAnswers(){
 
     //determine result from score
     if (score < 6){
-        result = "HTML"
+        result = "Tomato"
     }
 
     else if (score < 10){
-        result = "Python"
+        result = "Pumpkin"
     }
 
     else if (score <= 13){
-        result = "JavaScript"
+        result = "Onion"
     }
 
     else {
-        result = "Java"
+        result = "Aubergine"
     }
     
     //display result as an alert.
-    alert(`The Programming Language you should learn in ${result}!`);
+    alert(`You're ${result}!`);
 }
