@@ -27,16 +27,16 @@ function checkAnswers(){
     }
 
     //assign the score for question 2 to the answer2 variable
-    let answer2 = quiz.animal.value;
+    let answer2 = quiz.season.value;
 
     //assign the score value
-    if(answer2 === "snail"){
+    if(answer2 === "spring"){
         score = score + 1;
     }
-    else if (answer2 === "ant") {
+    else if (answer2 === "summer") {
         score = score + 2;
     }
-    else if (answer2 === "beetle") {
+    else if (answer2 === "autumn") {
         score = score + 3;
     }
     else {
@@ -61,7 +61,7 @@ function checkAnswers(){
     }
 
     //assign the score for question 4 to the answer4 variable
-    let answer4 = quiz.hobby.value;
+    let answer4 = quiz.animal.value;
 
     //assign the score value
     if(answer4 === "spring"){
@@ -93,7 +93,19 @@ function checkAnswers(){
     else {
         result = "Aubergine"
     }
-    
-    //display result as an alert.
-    alert(`You're ${result}!`);
+
+// Wait for 3 seconds (3000 milliseconds) before redirecting
+setTimeout(() => {
+    // Redirect to a new page based on the result
+    if (result === "Tomato") {
+        window.location.href = "tomato.html";
+    } else if (result === "Pumpkin") {
+        window.location.href = "pumpkin.html";
+    } else if (result === "Onion") {
+        window.location.href = "onion.html";
+    } else if (result === "Aubergine") {
+        window.location.href = "aubergine.html";
+    }
+}, 1500);
+
 }
